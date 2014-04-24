@@ -8,10 +8,10 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 ## 目录
 
-1. [空格 & 换行](#空格&换行)
+1. [空格](#空格)
 1. [换行](#换行)
 
-## 空格 & 换行
+## 空格
 在特定的位置加上空格有助于代码的可读性。
 
 * 必须「MUST」采用4个空格为一次缩进
@@ -32,6 +32,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ∙∙var name;
     }
     ```
+* 在行末和空行中不要「SHOULD NOT」使用空格。
 * 在大括号开始处的前面必须「MUST」使用空格。
 
     ```javascript
@@ -65,6 +66,28 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     // good
     var x = y + 5;
+    ```
+* 在以下关键后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly.
+
+    ```javascript
+    // good
+    if (condition) {
+      // statements
+    }
+
+    while (condition) {
+      // statements
+    }
+
+    for (var i = 0; i < 100; i++) {
+      // statements
+    }
+
+    if (true) {
+      // statements
+    } else {
+      // statements
+    }
     ```
 
 **[⬆ Top](#目录)**
