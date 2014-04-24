@@ -171,6 +171,52 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 **[⬆ Top](#目录)**
 ## 换行
+适当的换行和空行可以提高代码可读性。
+
+* 每一行代码严格以120字符为最大长度，即一行包括前后的空格， 不得「MUST NOT」超过120个字符。
+* 每个独立语句结束后面必须「MUST」使用换行。
+* 换行后不得「MUST NOT」让操作符位于位于新行行首。
+
+    ```javascript
+    // bad
+    a = 124343 + 34343
+        + 45454;
+
+    // good
+    a = 124343 + 34343 +
+        45454;
+
+
+    // bad
+    if (condition1
+        && condition2
+        && condition3) {
+
+    }
+
+    // good
+    if (condition1 &&
+        condition2 &&
+        condition3) {
+
+    }
+
+    // bad
+    function funA(firstArg, sencondArg
+        , thirdArg) {
+        // statement
+    }
+
+    // good
+    function funA(firstArg, sencondArg,
+        thirdArg) {
+        // statement
+    }
+
+    // 字符串太多。
+    ```
+
+**[⬆ Top](#目录)**
 
 ## 块
 
