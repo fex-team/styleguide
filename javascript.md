@@ -35,7 +35,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ∙∙∙∙var name;
     }
     ```
-* 在行末和空行中不要「SHOULD NOT」使用空格。
 * 在大括号开始处的前面必须「MUST」使用空格。
 
     ```javascript
@@ -121,6 +120,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         c: 2
     };
     ```
+* 在行末和空行中不允许「MUST NOT」使用空格。
 
 **[⬆ Top](#目录)**
 ## 换行
