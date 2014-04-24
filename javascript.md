@@ -222,6 +222,22 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         // statement
     }
     ```
+* 在文件结尾处应该「SHOULD」留一个空行。
+
+    ```javascript
+    // bad
+    (function(global) {
+      // ...stuff...
+    })(this);
+    ```
+
+    ```javascript
+    // good
+    (function(global) {
+      // ...stuff...
+    })(this);
+
+    ```
 * 块状代码与其他部分应该「SHOULD」使用至少一个空行分割。
 
     ```javascript
