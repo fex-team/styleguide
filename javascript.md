@@ -97,7 +97,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         b: 1
     };
     ```
-* 在操作符左右必须「MUST」使用空格。
+* 在运算符左右必须「MUST」使用空格。
 
     ```javascript
     // bad
@@ -106,7 +106,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     var x = y + 5;
     ```
-* 一元操作符（如：!, ++ 等等）与操作对象之间不允许「MUST NOT」使用空格。
+* 一元运算符（如：!, ++ 等等）与操作对象之间不允许「MUST NOT」使用空格。
 
     ```javascript
     // bad
@@ -118,6 +118,50 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     var a = !arr.length;
 
     a++;
+    ```
+* 关键字`function`后面必须「MUST」使用空格，但是如果是匿名方法，关键字`function`后面不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    var funcA = function () {
+        // statement
+    };
+
+    // good
+    var funcA = function() {
+        // statement
+    };
+
+    function funcA() {
+        // statement
+    }
+    ```
+* 函数参数与左右括号之间不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    function funA( a, b ) {
+
+    }
+
+    var funB = function( c ) {
+
+    };
+
+    funA( 1, 2 );
+    funB( 3 );
+
+    // good
+    function funA(a, b) {
+
+    }
+
+    var funB = function(c) {
+
+    };
+
+    funA(1, 2);
+    funB(3);
     ```
 * 所有`,`，`;`前面不允许「MUST NOT」使用空格。
 * 在对象属性中的`:`前面不允许「MUST NOT」使用空格。
