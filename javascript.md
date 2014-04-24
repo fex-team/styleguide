@@ -175,6 +175,15 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 * 每一行代码严格以120字符为最大长度，即一行包括前后的空格， 不得「MUST NOT」超过120个字符。
 * 每个独立语句结束后面必须「MUST」使用换行。
+
+    ```javascript
+    // bad
+    api.callFunA(); api.callFunB();
+
+    // good
+    api.callFunA();
+    api.callFunB();
+    ```
 * 换行后不得「MUST NOT」让操作符位于位于新行行首。
 
     ```javascript
@@ -212,8 +221,52 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         thirdArg) {
         // statement
     }
+    ```
+* 块状代码与其他部分应该「SHOULD」使用至少一个空行分割。
 
-    // 字符串太多。
+    ```javascript
+    // bad
+    callFunA();
+    if (condition) {
+        doSomeThings();
+    }
+    callFunB();
+
+    obj = {
+        a: 1,
+        b: 2,
+        c: function() {
+            // do some things.
+        },
+        d: {
+            x: 1,
+            y: 2
+        }
+    };
+
+    // good
+    callFunA();
+
+    if (condition) {
+        doSomeThings();
+    }
+
+    callFunB();
+
+    obj = {
+        a: 1,
+        b: 2,
+
+        c: function() {
+            // do some things.
+        },
+
+        d: {
+            x: 1,
+            y: 2
+        }
+    };
+
     ```
 
 **[⬆ Top](#目录)**
