@@ -83,18 +83,21 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     }
     ```
 * 在对象属性中的`:`后面「MUST」使用空格。
+* 在对象属性中的`:`前面不允许「MUST NOT」使用空格。
 
     ```javascript
     // bad
     var obj = {
-        a:'123',
-        b:1
+        a : 1,
+        b:2,
+        c :3
     };
 
     // good
     var obj = {
-        a: '123',
-        b: 1
+        a: 1,
+        b: 2,
+        c: 3
     };
     ```
 * 在运算符左右必须「MUST」使用空格。
@@ -164,21 +167,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     funB(3);
     ```
 * 所有`,`，`;`前面不允许「MUST NOT」使用空格。
-* 在对象属性中的`:`前面不允许「MUST NOT」使用空格。
-
-    ```javascript
-    // bad
-    var a = {
-        b : 1,
-        c : 2
-    };
-
-    // good
-    var a = {
-        b: 1,
-        c: 2
-    };
-    ```
 * 在行末和空行中不允许「MUST NOT」使用空格。
 
 **[⬆ Top](#目录)**
