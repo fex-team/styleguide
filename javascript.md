@@ -82,6 +82,21 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       // statements
     }
     ```
+* 在对象属性中的`:`后面「MUST」使用空格。
+
+    ```javascript
+    // bad
+    var obj = {
+        a:'123',
+        b:1
+    };
+
+    // good
+    var obj = {
+        a: '123',
+        b: 1
+    };
+    ```
 * 在操作符左右必须「MUST」使用空格。
 
     ```javascript
