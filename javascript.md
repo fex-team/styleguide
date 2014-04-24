@@ -167,6 +167,14 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     funB(3);
     ```
 * 所有`,`，`;`前面不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    callFunA(a , b) ;
+
+    // good
+    calFunA(a, b);
+    ```
 * 在行末和空行中不允许「MUST NOT」使用空格。
 
 **[⬆ Top](#目录)**
