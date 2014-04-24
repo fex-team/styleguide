@@ -7,7 +7,7 @@ Javascript 编码规范
 文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
 NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中被说明。
 
-**还未定稿，对规范中提及的点有不赞同的欢迎提出issues来讨论。**
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)讨论。**
 
 ## 目录
 
@@ -15,14 +15,14 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 1. [换行](#换行)
 
 ## 空格
-在特定的位置加上空格有助于代码的可读性。
+在特定的位置加上空格可以提高代码的可读性。
 
 * 必须「MUST」采用4个空格为一次缩进
 
     ```javascript
     // bad
     function() {
-    ∙∙∙∙var name;
+    ∙∙var name;
     }
 
     // bad
@@ -32,7 +32,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     // good
     function() {
-    ∙∙var name;
+    ∙∙∙∙var name;
     }
     ```
 * 在行末和空行中不要「SHOULD NOT」使用空格。
@@ -61,15 +61,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       breed: 'Bernese Mountain Dog'
     });
     ```
-* 在操作符左右必须「MUST」使用空格。
-
-    ```javascript
-    // bad
-    var x=y+5;
-
-    // good
-    var x = y + 5;
-    ```
 * 在以下关键后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly.
 
     ```javascript
@@ -91,6 +82,44 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     } else {
       // statements
     }
+    ```
+* 在操作符左右必须「MUST」使用空格。
+
+    ```javascript
+    // bad
+    var x=y+5;
+
+    // good
+    var x = y + 5;
+    ```
+* 一元操作符（如：!, ++ 等等）与操作对象之间不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    var a = ! arr.length;
+
+    a ++;
+
+    // good
+    var a = !arr.length;
+
+    a++;
+    ```
+* 所有`,`，`;`前面不允许「MUST NOT」使用空格。
+* 在对象属性中的`:`前面不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    var a = {
+        b : 1,
+        c : 2
+    };
+
+    // good
+    var a = {
+        b: 1,
+        c: 2
+    };
     ```
 
 **[⬆ Top](#目录)**
