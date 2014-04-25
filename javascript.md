@@ -13,6 +13,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 1. [空格](#空格)
 1. [换行](#换行)
+1. [类型检测](#类型检测)
 
 ## 空格
 在特定的位置加上空格可以提高代码的可读性。
@@ -296,9 +297,168 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 **[⬆ Top](#目录)**
 
 ## 块
+所有的多行块状代码应当「SHOULD」使用大括号括起来。
 
-## 类型转换
+```javascript
+// bad
+if (test)
+  return false;
+
+// good
+if (test) return false;
+
+// good
+if (test) {
+  return false;
+}
+
+// bad
+function() { return false; }
+
+// good
+function() {
+  return false;
+}
+```
+
+## 类型检测
+
+### 基本类型检测
+* String: `typeof variable === "string"`
+* Number: `typeof variable === "number"`
+* Boolean: `typeof variable === "boolean"`
+* Object: `typeof variable === "object"`
+* Array: 如果支持，使用：`Array.isArray( arrayLikeObject )`
+* Node: `elem.nodeType === 1`
+* null: `variable === null`
+* null or undefined:: `variable == null`
+* undefined
+    * 全局变量: `typeof variable === "undefined"`
+    * 局部变量: `variable === undefined`
+    * 属性:
+
+        ```javascript
+        object.prop === undefined
+        object.hasOwnProperty( prop )
+        "prop" in object
+        ```
+
+### 强值类型转换
+以下是一些常见的类型装换的例子，推荐使用。
+
+```javascript
+var number = 1,
+  string = "1",
+  bool = false;
+
+number;
+// 1
+
+number + "";
+// "1"
+
+string;
+// "1"
+
++string;
+// 1
+
++string++;
+// 1
+
+string;
+// 2
+
+bool;
+// false
+
++bool;
+// 0
+
+bool + "";
+// "false"
+```
+
+```javascript
+var number = 1,
+  string = "1",
+  bool = true;
+
+string === number;
+// false
+
+string === number + "";
+// true
+
++string === number;
+// true
+
+bool === number;
+// false
+
++bool === number;
+// true
+
+bool === string;
+// false
+
+bool === !!string;
+// true
+```
+
+```javascript
+var array = [ 'a', 'b', 'c' ];
+
+!!~array.indexOf('a');
+// true
+
+!!~array.indexOf('b');
+// true
+
+!!~array.indexOf('c');
+// true
+
+!!~array.indexOf('d');
+// false
+```
+
+```javascript
+var num = 2.5;
+
+parseInt( num, 10 );
+
+// is the same as...
+
+~~num;
+
+num >> 0;
+
+num >>> 0;
+
+// All result in 2
+
+// Keep in mind however, that negative numbers will be treated differently...
+
+var neg = -2.5;
+
+parseInt( neg, 10 );
+
+// is the same as...
+
+~~neg;
+
+neg >> 0;
+
+// All result in -2
+// However...
+
+neg >>> 0;
+
+// Will result in 4294967294
+```
+
 ## 条件判断
+
 ## 命名
 ## 注释
 ## 其他
