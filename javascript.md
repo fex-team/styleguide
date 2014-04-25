@@ -533,16 +533,16 @@ neg >>> 0;
 * **常量名：**
     必须「MUST」使用全部大写的下划线命名法，如IS_DEBUG_ENABLED
 * **类名：**
-    必须(MUST) 使用pascal命名法
+    必须「MUST」使用pascal命名法
 
 ### 语义
 
 命名同时还需要关注语义，如：
 
-* 变量名 应当(SHOULD) 使用名词
-* **Boolean**类型的 应当(SHOULD) 使用**is**、**has**等起头，表示其类型
-* 函数名 应当(SHOULD) 用动宾短语
-* 类名 应当(SHOULD) 用名词
+* 变量名 应当「SHOULD」使用名词
+* **Boolean**类型的 应当「SHOULD」使用**is**、**has**等起头，表示其类型
+* 函数名 应当「SHOULD」用动宾短语
+* 类名 应当「SHOULD」用名词
 
 **[⬆ Top](#目录)**
 ## 注释
