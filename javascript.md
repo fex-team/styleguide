@@ -259,27 +259,11 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     // good
     $('#items')
-      .find('.selected')
-        .highlight()
-        .end()
-      .find('.open')
-        .updateCount();
-
-    // bad
-    var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
-        .attr('width',  (radius + margin) * 2).append('svg:g')
-        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
-        .call(tron.led);
-
-    // good
-    var leds = stage.selectAll('.led')
-        .data(data)
-      .enter().append('svg:svg')
-        .class('led', true)
-        .attr('width',  (radius + margin) * 2)
-      .append('svg:g')
-        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
-        .call(tron.led);
+        .find('.selected')
+            .highlight()
+            .end()
+        .find('.open')
+            .updateCount();
     ```
 * 块状代码与其他部分应该「SHOULD」使用至少一个空行分割。
 
