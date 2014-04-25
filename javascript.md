@@ -17,6 +17,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 1. [条件判断](#条件判断)
 1. [命名](#命名)
 1. [注释](#注释)
+1. [其他](#其他)
 
 ## 空格
 在特定的位置加上空格可以提高代码的可读性。
@@ -249,6 +250,36 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       // ...stuff...
     })(this);
 
+    ```
+* 链式调用较长时应当「SHOULD」采用缩进进行调整。
+
+    ```javascript
+    // bad
+    $('#items').find('.selected').highlight().end().find('.open').updateCount();
+
+    // good
+    $('#items')
+      .find('.selected')
+        .highlight()
+        .end()
+      .find('.open')
+        .updateCount();
+
+    // bad
+    var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
+        .attr('width',  (radius + margin) * 2).append('svg:g')
+        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+        .call(tron.led);
+
+    // good
+    var leds = stage.selectAll('.led')
+        .data(data)
+      .enter().append('svg:svg')
+        .class('led', true)
+        .attr('width',  (radius + margin) * 2)
+      .append('svg:g')
+        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+        .call(tron.led);
     ```
 * 块状代码与其他部分应该「SHOULD」使用至少一个空行分割。
 
