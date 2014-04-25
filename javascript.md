@@ -71,7 +71,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       breed: 'Bernese Mountain Dog'
     });
     ```
-* 在以下关键后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly.
+* 在以下关键词后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly.
 
     ```javascript
     // good
