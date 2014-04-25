@@ -512,7 +512,7 @@ neg >>> 0;
 
 ## 命名
 
-** 说明 **
+**说明**
 
 * camel命名法，形如thisIsAnApple
 * pascal命名法，形如ThisIsAnApple
