@@ -625,3 +625,12 @@ neg >>> 0;
 **[⬆ Top](#目录)**
 ## 其他
 ## 参考资料
+
+* <https://github.com/airbnb/javascript>
+* <https://github.com/ecomfe/spec>
+* <https://github.com/rwaldron/idiomatic.js>
+* <http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml>
+* <http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml>
+* <http://front-end-standards.com/>
+* <https://github.com/styleguide/>
+* <https://contribute.jquery.org/style-guide/js/>
