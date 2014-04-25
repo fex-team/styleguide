@@ -322,6 +322,8 @@ function() {
 }
 ```
 
+**[⬆ Top](#目录)**
+
 ## 类型检测
 
 ### 基本类型检测
@@ -460,6 +462,8 @@ neg >>> 0;
 
 **注意** 使用`parseInt`进行数字类型转换的时候，应当「SHOULD」指定第二个参数，以免误当八进制解析。
 
+**[⬆ Top](#目录)**
+
 ## 条件判断
 
 * 应当「SHOULD」使用`===`和`!==`代替`==`和`!=`。
@@ -503,6 +507,7 @@ neg >>> 0;
 
  更多信息请查看[Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108)。
 
+**[⬆ Top](#目录)**
 ## 命名
 ## 注释
 ## 其他
