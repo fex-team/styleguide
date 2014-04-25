@@ -792,6 +792,23 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
         }
     }
     ```
+* 立即执行函数应当「SHOULD」统一采用以下方式。
+
+    ```javascript
+    // good
+    (function() {
+        // skiped
+    })();
+
+    // bad
+    +function() {
+        // skiped
+    }();
+
+    !function() {
+        // skiped
+    }();
+    ```
 
 **[⬆ Top](#目录)**
 
