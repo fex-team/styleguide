@@ -23,7 +23,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 * 代码应该「SHOULD」符合CSS语法有效性，可以使用[W3C CSS validator](http://jigsaw.w3.org/css-validator/validator.html.zh-cn)工具来验证。
 
-* ID和Class应该「SHOULD」按照元素功能命名，不应该「SHOULD NOT」安装元素表现命名，命名应该「SHOULD」含义清晰。
+* ID和Class应该「SHOULD」按照元素功能命名，不应该「SHOULD NOT」按照元素表现命名，命名应该「SHOULD」含义清晰。
 
     ```css
     /* bad: 含义不清 */
@@ -49,7 +49,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     #nav {}
     .author {}
     ```
-* ID和Class命名中单词应该「SHOULD」全部小写，而且使用"-"作为分隔符。
+* ID和Class命名中单词应该「SHOULD」全部小写，并且使用"-"作为分隔符。
 
     ```css
     /* bad */
@@ -62,7 +62,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     .ads-sample {}
     ```
 
-* 不能「MUST NOT」把ID和Class作为类型选择服的限定符。
+* 不能「MUST NOT」把ID和Class选择符作为类型选择符的限定符。
 
     ```css
     /* bad */
