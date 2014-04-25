@@ -621,7 +621,7 @@ neg >>> 0;
     var count = 10;
     ```
 
-
+Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)。
 
 **[⬆ Top](#目录)**
 ## 其他
