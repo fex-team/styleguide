@@ -13,6 +13,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 1. [空格](#空格)
 1. [换行](#换行)
+1. [块状代码](#块状代码)
 1. [类型检测](#类型检测)
 1. [条件判断](#条件判断)
 1. [命名](#命名)
@@ -314,7 +315,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 **[⬆ Top](#目录)**
 
-## 块
+## 块状代码
 所有的多行块状代码应当「SHOULD」使用大括号括起来。
 
 ```javascript
