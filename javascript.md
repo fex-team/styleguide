@@ -13,6 +13,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 1. [空格](#空格)
 1. [换行](#换行)
+1. [字符串](#字符串)
 1. [块状代码](#块状代码)
 1. [类型检测](#类型检测)
 1. [条件判断](#条件判断)
@@ -311,6 +312,45 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         }
     };
 
+    ```
+
+**[⬆ Top](#目录)**
+
+## 字符串
+
+* 必须「MUST」统一采用单引号`''`。
+
+    ```javascript
+    // bad
+    var name = "Bob Parr";
+
+    // good
+    var name = 'Bob Parr';
+
+    // bad
+    var fullName = "Bob " + this.lastName;
+
+    // good
+    var fullName = 'Bob ' + this.lastName;
+    ```
+* 超长字符串应当「SHOULD」使用"+"进行换行。
+
+    ```javascript
+    // 正确
+    var myString = 'A rather long string of English text, an error message ' +
+                 'actually that just keeps going and going -- an error ' +
+                 'message to make the Energizer bunny blush (right through ' +
+                 'those Schwarzenegger shades)! Where was I? Oh yes, ' +
+                 'you\'ve got an error and all the extraneous whitespace is ' +
+                 'just gravy.  Have a nice day.';
+
+    // 错误
+    var myString = 'A rather long string of English text, an error message \
+                  actually that just keeps going and going -- an error \
+                  message to make the Energizer bunny blush (right through \
+                  those Schwarzenegger shades)! Where was I? Oh yes, \
+                  you\'ve got an error and all the extraneous whitespace is \
+                  just gravy.  Have a nice day.';
     ```
 
 **[⬆ Top](#目录)**
@@ -625,6 +665,23 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
 
 **[⬆ Top](#目录)**
 ## 其他
+
+* 创建Object/Array时，应当「SHOULD」采用字面量方式。
+
+    ```javascript
+    // bad
+    var item = new Object();
+
+    // good
+    var item = {};
+
+    // bad
+    var items = new Array();
+
+    // good
+    var items = [];
+    ```
+
 ## 参考资料
 
 * <https://github.com/airbnb/javascript>
