@@ -748,6 +748,49 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
     // good
     var items = [];
     ```
+*  for-in循环体中应当「SHOULD」用hasOwnProperty方法检查成员是否为自身成员。避免来自原型链上的污染。
+
+    ```javascript
+    // good
+    for (name in object) {
+
+        if (object.hasOwnProperty(name)) {
+            doSomething();
+        }
+    }
+    ```
+* 不得「MUST NOT」使用with, void, eval。
+* 函数定义。不得「MUST NOT」在if、for、while等代码块中定义函数，在函数中定义内嵌函数时应该把函数定义放在顶部。闭包除外。
+
+    ```javascript
+    // bad
+    function outerFunc(va) {
+        va = va || 0;
+
+        if (va) {
+            function innerFunc() {
+                //to do....
+            }
+
+            innerFunc();
+        }
+    }
+
+    // good
+    function outerFunc(va) {
+        va = va || 0;
+
+        function innerFunc() {
+            //to do....
+        }
+
+        if (va) {
+            innerFunc();
+        }
+    }
+    ```
+
+**[⬆ Top](#目录)**
 
 ## 参考资料
 
