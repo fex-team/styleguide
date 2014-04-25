@@ -324,23 +324,23 @@ function() {
 ## 类型检测
 
 ### 基本类型检测
-* String: `typeof variable === "string"`
-* Number: `typeof variable === "number"`
-* Boolean: `typeof variable === "boolean"`
-* Object: `typeof variable === "object"`
+* String: `typeof variable === 'string'`
+* Number: `typeof variable === 'number'`
+* Boolean: `typeof variable === 'boolean'`
+* Object: `typeof variable === 'object'`
 * Array: 如果支持，使用：`Array.isArray( arrayLikeObject )`
 * Node: `elem.nodeType === 1`
 * null: `variable === null`
 * null or undefined:: `variable == null`
 * undefined
-    * 全局变量: `typeof variable === "undefined"`
+    * 全局变量: `typeof variable === 'undefined'`
     * 局部变量: `variable === undefined`
     * 属性:
 
         ```javascript
         object.prop === undefined
         object.hasOwnProperty( prop )
-        "prop" in object
+        'prop' in object
         ```
 
 ### 强值类型转换
@@ -348,17 +348,17 @@ function() {
 
 ```javascript
 var number = 1,
-  string = "1",
+  string = '1',
   bool = false;
 
 number;
 // 1
 
-number + "";
-// "1"
+number + '';
+// '1'
 
 string;
-// "1"
+// '1'
 
 +string;
 // 1
@@ -375,19 +375,19 @@ bool;
 +bool;
 // 0
 
-bool + "";
-// "false"
+bool + '';
+// 'false'
 ```
 
 ```javascript
 var number = 1,
-  string = "1",
+  string = '1',
   bool = true;
 
 string === number;
 // false
 
-string === number + "";
+string === number + '';
 // true
 
 +string === number;
@@ -425,7 +425,7 @@ var array = [ 'a', 'b', 'c' ];
 ```javascript
 var num = 2.5;
 
-parseInt( num, 10 );
+parseInt(num, 10);
 
 // is the same as...
 
@@ -441,7 +441,7 @@ num >>> 0;
 
 var neg = -2.5;
 
-parseInt( neg, 10 );
+parseInt(neg, 10);
 
 // is the same as...
 
