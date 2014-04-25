@@ -15,6 +15,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 1. [换行](#换行)
 1. [类型检测](#类型检测)
 1. [条件判断](#条件判断)
+1. [命名](#命名)
 
 ## 空格
 在特定的位置加上空格可以提高代码的可读性。
@@ -467,7 +468,7 @@ neg >>> 0;
 ## 条件判断
 
 * 应当「SHOULD」使用`===`和`!==`代替`==`和`!=`。
-* 条件判断规则
+* 条件判断遵循以下规则
     * **Objects**等同于**true**
     * **Undefined**等同于**false**
     * **Null**等同于**false**
@@ -508,7 +509,42 @@ neg >>> 0;
  更多信息请查看[Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108)。
 
 **[⬆ Top](#目录)**
+
 ## 命名
+
+** 说明 **
+
+* camel命名法，形如thisIsAnApple
+* pascal命名法，形如ThisIsAnApple
+* 下划线命名法，形如this_is_an_apple
+
+根据不同类型的内容， 必须「MUST」严格采用如下的命名法：
+
+* 变量名：
+    必须「MUST」使用camel命名法
+* 参数名：
+    必须「MUST」使用camel命名法
+* 函数名：
+    必须「MUST」使用camel命名法
+* 方法、属性
+    必须「MUST」使用camel命名法
+* 私有成员、方法
+    必须「MUST」以下划线_开头
+* 常量名：
+    必须「MUST」使用全部大写的下划线命名法，如IS_DEBUG_ENABLED
+* 类名：
+    必须(MUST) 使用pascal命名法
+
+### 语义
+
+命名同时还需要关注语义，如：
+
+* 变量名 应当(SHOULD) 使用名词
+* **Boolean**类型的 应当(SHOULD) 使用**is**、**has**等起头，表示其类型
+* 函数名 应当(SHOULD) 用动宾短语
+* 类名 应当(SHOULD) 用名词
+
+**[⬆ Top](#目录)**
 ## 注释
 ## 其他
 ## 参考资料
