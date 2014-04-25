@@ -13,6 +13,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 1. [空格](#空格)
 1. [换行](#换行)
+1. [变量](#变量)
 1. [字符串](#字符串)
 1. [块状代码](#块状代码)
 1. [类型检测](#类型检测)
@@ -316,6 +317,72 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 **[⬆ Top](#目录)**
 
+## 变量
+
+* 变量在使用前必须「MUST」使用`var`申明，不要污染到全局。
+
+    ```javascript
+    // bad
+    superPower = new SuperPower();
+
+    // good
+    var superPower = new SuperPower();
+    ```
+* 多个变量申明，应当「SHOULD」采用多个`var`来申明，每个`var`申明独占一行，且一次申明一个变量。
+
+    ```javascript
+    // bad
+    var items = getItems(),
+        goSportsTeam = true,
+        dragonball = 'z';
+
+    // good
+    var items = getItems();
+    var goSportsTeam = true;
+    var dragonball = 'z';
+    ```
+* 多个非赋值的变量申明可以「MAY」共用一个`var`，但是单行不得超出120个字符字符。
+
+    ```javascript
+    // good.
+    var a = 1;
+    var b = 2;
+    var c, d, e, f, g;
+    ```
+* 同一个作用域下的变量应当「SHOULD」统一在`function`头部申明。
+
+    ```javascript
+    // bad
+    function funA(arg) {
+        doSomething();
+
+        var a = 3;
+
+        if (condition) {
+            var b = 2;
+        }
+
+        var c = 1;
+    }
+
+    // good
+    function funA(arg) {
+        var a = 3;
+        var c = 1;
+        var b;
+
+        doSomething();
+
+        if (condition) {
+            b = 2;
+        }
+    }
+    ```
+
+更多关于[oneVar](http://benalman.com/news/2012/05/multiple-var-statements-javascript/)的讨论。
+
+**[⬆ Top](#目录)**
+
 ## 字符串
 
 * 必须「MUST」统一采用单引号`''`。
@@ -356,7 +423,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 **[⬆ Top](#目录)**
 
 ## 块状代码
-所有的多行块状代码应当「SHOULD」使用大括号括起来。
+所有的**多行**块状代码应当「SHOULD」使用大括号括起来。
 
 ```javascript
 // bad
