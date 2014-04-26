@@ -10,7 +10,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 * 所有带「MUST」说明的规则将提供检测工具检测。
 * 所有带「SHOULD」和「MUST」说明的规则将提供格式化工具自动排版。
 
-**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加JavaScript标签)讨论。**
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加`JavaScript`标签)讨论。**
 
 ## 目录
 

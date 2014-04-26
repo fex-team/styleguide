@@ -7,11 +7,13 @@
 文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
 NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中被说明。
 
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加`目录规范`标签)讨论。**
+
 ## README.md
 每个项目都必须「MUST」包含一个`README.md`文件，此文件中应当「SHOULD」概要描述此项目的功能和特点等信息。
 
 ## .editorconfig
-每个项目应当「SHOULD」包含一个`.editorconfig`，用来统一配置编辑器的换行、缩进存储格式。
+每个项目应当「SHOULD」包含`.editorconfig`，用来统一配置编辑器的换行、缩进存储格式，使用方式请参考(editorconfig是什么？)[https://github.com/fex-team/styleguide/blob/master/editorconfig.md]。
 
 ## src
 
