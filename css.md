@@ -73,7 +73,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     #example {}
     .error {}
     ```
-* CSS属性应该「SHOULD」尽可能使用简化方式书写。
+* CSS属性应该「SHOULD」尽可能使用简化方式书写，需注意简写时默认值的副作用，详细参考(Shorthand properties)[https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties]。
 
     ```css
     /* bad */
