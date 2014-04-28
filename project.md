@@ -16,6 +16,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 ```
 .
 ├── .editorconfig
+├── .travis.yml
 ├── css
 ├── dist
 ├── doc
@@ -46,7 +47,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 ### doc
 
-所有项目应当「SHOULD」包含一个`doc`目录，用来存放详细的API使用文档。
+所有项目应当「SHOULD」包含一个 `doc` 目录，用来存放详细的 API 使用文档。
 
 ### dist
 
