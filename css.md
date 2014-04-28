@@ -21,9 +21,9 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 ## 代码风格
 
-* 代码应该「SHOULD」符合CSS语法有效性，可以使用[W3C CSS validator](http://jigsaw.w3.org/css-validator/validator.html.zh-cn)工具来验证。
+* 代码应该「SHOULD」符合 CSS 语法有效性，可以使用 [W3C CSS validator](http://jigsaw.w3.org/css-validator/validator.html.zh-cn) 工具来验证。
 
-* ID和Class应该「SHOULD」按照元素功能命名，不应该「SHOULD NOT」按照元素表现命名，命名应该「SHOULD」含义清晰。
+* ID 和 Class 应该「SHOULD」按照元素功能命名，不应该「SHOULD NOT」按照元素表现命名，命名应该「SHOULD」含义清晰。
 
     ```css
     /* bad: 含义不清 */
@@ -38,7 +38,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     #login {}
     .video {}
     ```
-* ID和Class命名应该「SHOULD」在保持含义清晰的前提下尽可能简短。
+
+* ID 和 Class 命名应该「SHOULD」在保持含义清晰的前提下尽可能简短。
 
     ```css
     /* bad */
@@ -49,7 +50,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     #nav {}
     .author {}
     ```
-* ID和Class命名中单词应该「SHOULD」全部小写，并且使用"-"作为分隔符。
+
+* ID 和 Class 命名中单词应该「SHOULD」全部小写，单词之间使用 `-` 作为分隔符。
 
     ```css
     /* bad */
@@ -62,7 +64,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     .ads-sample {}
     ```
 
-* 不能「MUST NOT」把ID和Class选择符作为类型选择符的限定符。
+* 不能「MUST NOT」把 ID 和 Class 选择符作为类型选择符的限定符，这样做没必要，反而还影响性能。
 
     ```css
     /* bad */
@@ -73,7 +75,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     #example {}
     .error {}
     ```
-* CSS属性应该「SHOULD」尽可能使用简化方式书写，需注意简写时默认值的副作用，详细参考(Shorthand properties)[https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties]。
+
+* CSS 属性应该「SHOULD」尽可能使用简化方式书写，需注意简写时默认值的副作用，详细参考 (Shorthand properties)[https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties]。
 
     ```css
     /* bad */
@@ -91,7 +94,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     font: 100%/1.6 palatino, georgia, serif;
     padding: 0 1em 2em;
     ```
-* CSS属性中的"0"值不应该「SHOULD NOT」带单位。
+
+* CSS 属性中的 `0` 值不应该「SHOULD NOT」带单位。
 
     ```css
     /* bad */
@@ -102,7 +106,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     margin: 0;
     padding: 0;
     ```
-* CSS属性中数值介于-1到1之间的小数应该「SHOULD」忽略开头的"0"。
+
+* CSS 属性中数值介于-1到1之间的小数应该「SHOULD」忽略开头的 `0`。
 
     ```css
     /* bad */
@@ -111,7 +116,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     /* good */
     font-size: .8em;
     ```
-* CSS的色值应该「SHOULD」尽可能使用简化写法。
+
+* CSS 的色值应该「SHOULD」尽可能使用简化写法。
 
     ```css
     /* bad */
@@ -120,13 +126,14 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     /* good */
     color: #ebc;
     ```
+
 **[⬆ Top](#目录)**
 
 ## 组织格式
 
-* 必须「MUST」采用4个空格为一次缩进。
+* 必须「MUST」采用 4 个空格为一次缩进。
 
-* CSS属性声明应该「SHOULD」按字母升序排列。
+* CSS 属性声明应该「SHOULD」按字母升序排列。
 
     ```css
     /* good */
@@ -139,7 +146,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     text-align: center;
     text-indent: 2em;
     ```
-* CSS每个代码块相对于父代码库必须「MUST」有缩进。
+
+* CSS 每个代码块相对于父代码库必须「MUST」有缩进。
 
     ```css
     /*good*/
@@ -152,8 +160,9 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     }
     ```
-* CSS属性声明必须「MUST」以分号结尾。
-* CSS属性名冒号后必须「MUST」有一个空格。
+
+* CSS 属性声明必须「MUST」以分号结尾。
+* CSS 属性名冒号后必须「MUST」有一个空格。
 
     ```css
     /* bad */
@@ -162,6 +171,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     /* good */
     color: #ebc;
     ```
+
+* CSS 中的属性名建议「RECOMMENDED」按照字母顺序排列，可以使用 Sublime Text 的 F5 命令来自动格式化。
 * 最后的选择符与"{"之间必须「MUST」有一个空格。
 
     ```css
@@ -179,6 +190,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       margin-top: 1em;
     }
     ```
+
 * 多个并列的选择符必须「MUST」换行。
 
     ```css
@@ -195,7 +207,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       line-height: 1.2;
     }
     ```
-* CSS规则之间必须「MUST」以空白行分隔。
+
+* CSS 规则之间必须「MUST」以空白行分隔。
 
     ```css
     /* good */
@@ -208,7 +221,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       width: 50%;
     }
     ```
-* CSS属性值中所有使用到引号的位置必须「MUST」使用单引号。
+
+* CSS 属性值中所有使用到引号的位置必须「MUST」使用单引号。
 
     ```css
     /* bad */
@@ -225,6 +239,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       font-family: 'open sans', arial, sans-serif;
     }
     ```
+
 **[⬆ Top](#目录)**
 
 ## 代码注释
@@ -245,6 +260,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     .adw-gallery {}
     ```
+
 **[⬆ Top](#目录)**
 
 ## 样式重置

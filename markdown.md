@@ -52,13 +52,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ## 章节2
     ```
 
-* 代码段的必须「MUST」使用 Fenced code blocks。
-
-    ```
-       ```javascript
-     
-       ```
-    ```
+* 代码段的必须「MUST」使用 Fenced code blocks 风格，具体写法请参考本文档源码。
 
 * 表格的写法「SHOULD」，参考 [GFM](https://help.github.com/articles/github-flavored-markdown)。
 
@@ -89,7 +83,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     - 用直角引号（「」）代替双引号（“”），不同输入法的具体设置方法请[参考这里](http://www.zhihu.com/question/19755746)
     - 其它可以参考[知乎规范](http://www.zhihu.com/question/20414919)
 
-* 表达方式，应当「SHOULD」遵循《The Element of Style》
+* 表达方式，应当「SHOULD」遵循《The Element of Style》。
     * 使段落成为文章的单元：一个段落只表达一个主题
     * 通常在每一段落开始要点题，在段落结尾要扣题
     * 使用主动语态
