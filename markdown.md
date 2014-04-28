@@ -55,9 +55,9 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 * 代码段的必须「MUST」使用 Fenced code blocks。
 
     ```
-    ```javascript
-    var 
-    ```
+       ```javascript
+     
+       ```
     ```
 
 * 表格的写法「SHOULD」，参考 [GFM](https://help.github.com/articles/github-flavored-markdown)。
