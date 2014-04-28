@@ -186,6 +186,28 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     funB(3);
     ```
 
+* if/while/switch/for关键词后面的左右括号，与条件体之间不允许「MUST NOT」使用空格。
+
+    ```javascript
+    // bad
+    if ( condition ) {
+        console.log('bad');
+    }
+
+    for ( var i = 0, length = 10; i < length; i++ ) {
+        console.log('bad');
+    }
+
+    // good
+    if (condition) {
+        console.log('good');
+    }
+
+    for (var i = 0, length = 10; i < length; i++) {
+        console.log('bad');
+    }
+    ```
+
 * `,` 和 `;` 前面不允许「MUST NOT」使用空格。
 
     ```javascript
