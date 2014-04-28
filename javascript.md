@@ -4,6 +4,7 @@ Javascript 编码规范
 此为前端开发团队遵循和约定的 Javascript 编码规范，意在提高代码的规范性和可维护性。
 
 ## 说明
+
 文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
 NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在 [RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt) 中有说明。
 
@@ -26,9 +27,10 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 1. [其他](#其他)
 
 ## 空格
+
 在特定的位置加上空格可以提高代码的可读性。
 
-* 必须「MUST」采用4个空格为一次缩进
+* 必须「MUST」采用4个空格为一次缩进。
 
     ```javascript
     // bad
@@ -46,6 +48,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ∙∙∙∙var name;
     }
     ```
+
 * 在大括号开始处的前面必须「MUST」使用空格。
 
     ```javascript
@@ -71,7 +74,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       breed: 'Bernese Mountain Dog'
     });
     ```
-* 在以下关键词后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly.
+
+* 在以下关键词后面必须「MUST」使用空格: if/else/for/while/do/try/catch/finanlly。
 
     ```javascript
     // good
@@ -93,8 +97,9 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       // statements
     }
     ```
-* 在对象属性中的`:`后面「MUST」使用空格。
-* 在对象属性中的`:`前面不允许「MUST NOT」使用空格。
+
+* 在对象属性中的 `:` 后面「MUST」使用空格。
+* 在对象属性中的 `:` 前面不允许「MUST NOT」使用空格。
 
     ```javascript
     // bad
@@ -120,6 +125,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     var x = y + 5;
     ```
+
 * 一元运算符（如：!, ++ 等等）与操作对象之间不允许「MUST NOT」使用空格。
 
     ```javascript
@@ -133,7 +139,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
     a++;
     ```
-* 关键字`function`后面必须「MUST」使用空格，但是如果是匿名方法，关键字`function`后面不允许「MUST NOT」使用空格。
+
+* 关键字 `function` 后面必须「MUST」使用空格，但是如果是匿名方法，关键字 `function` 后面不允许「MUST NOT」使用空格。
 
     ```javascript
     // bad
@@ -150,6 +157,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         // statement
     }
     ```
+
 * 函数参数与左右括号之间不允许「MUST NOT」使用空格。
 
     ```javascript
@@ -177,7 +185,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     funA(1, 2);
     funB(3);
     ```
-* 所有`,`，`;`前面不允许「MUST NOT」使用空格。
+
+* `,` 和 `;` 前面不允许「MUST NOT」使用空格。
 
     ```javascript
     // bad
@@ -186,13 +195,16 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     calFunA(a, b);
     ```
+
 * 在行末和空行中不允许「MUST NOT」使用空格。
 
 **[⬆ Top](#目录)**
+
 ## 换行
+
 适当的换行和空行可以提高代码可读性。
 
-* 每一行代码严格以120字符为最大长度，即一行包括前后的空格， 不应该「SHOULD NOT」超过120个字符。
+* 每一行代码严格以 120 字符为最大长度，即一行包括前后的空格， 不应该「SHOULD NOT」超过 120 个字符。
 * 每个独立语句结束后面必须「MUST」使用换行。
 
     ```javascript
@@ -203,6 +215,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     api.callFunA();
     api.callFunB();
     ```
+
 * 换行后不得「MUST NOT」让操作符位于位于新行行首。
 
     ```javascript
@@ -213,7 +226,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     a = 124343 + 34343 +
         45454;
-
 
     // bad
     if (condition1
@@ -257,6 +269,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     })(this);
 
     ```
+
 * 链式调用较长时应当「SHOULD」采用缩进进行调整。
 
     ```javascript
@@ -271,6 +284,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         .find('.open')
             .updateCount();
     ```
+
 * 块状代码与其他部分应该「SHOULD」使用至少一个空行分割。
 
     ```javascript
@@ -322,7 +336,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 ## 变量
 
-* 变量在使用前必须「MUST」使用`var`申明，不要污染到全局。
+* 变量在使用前必须「MUST」使用 `var` 申明，不要污染到全局。
 
     ```javascript
     // bad
@@ -331,7 +345,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     var superPower = new SuperPower();
     ```
-* 多个变量申明，应当「SHOULD」采用多个`var`来申明，每个`var`申明独占一行，且一次申明一个变量。
+
+* 多个变量申明，应当「SHOULD」采用多个 `var` 来申明，每个 `var` 申明独占一行，且一次申明一个变量。
 
     ```javascript
     // bad
@@ -344,7 +359,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     var goSportsTeam = true;
     var dragonball = 'z';
     ```
-* 多个非赋值的变量申明可以「MAY」共用一个`var`，但是单行不得超出120个字符字符。
+
+* 多个非赋值的变量申明可以「MAY」共用一个 `var`，但是单行不得超出120个字符字符。
 
     ```javascript
     // good.
@@ -352,7 +368,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     var b = 2;
     var c, d, e, f, g;
     ```
-* 同一个作用域下的变量应当「SHOULD」统一在`function`头部申明。
+
+* 同一个作用域下的变量应当「SHOULD」统一在 `function` 头部申明。
 
     ```javascript
     // bad
@@ -382,13 +399,13 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     }
     ```
 
-更多关于[oneVar](http://benalman.com/news/2012/05/multiple-var-statements-javascript/)的讨论。
+更多关于 [oneVar](http://benalman.com/news/2012/05/multiple-var-statements-javascript/)的讨论。
 
 **[⬆ Top](#目录)**
 
 ## 字符串
 
-* 必须「MUST」统一采用单引号`''`。
+* 必须「MUST」统一采用单引号 `''`。
 
     ```javascript
     // bad
@@ -403,7 +420,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     var fullName = 'Bob ' + this.lastName;
     ```
-* 超长字符串应当「SHOULD」使用"+"进行换行。
+
+* 超长字符串应当「SHOULD」使用 `+` 进行换行。
 
     ```javascript
     // 正确
@@ -426,6 +444,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 **[⬆ Top](#目录)**
 
 ## 块状代码
+
 所有的**多行**块状代码应当「SHOULD」使用大括号括起来。
 
 ```javascript
@@ -455,6 +474,7 @@ function() {
 ## 类型检测
 
 ### 基本类型检测
+
 * String: `typeof variable === 'string'`
 * Number: `typeof variable === 'number'`
 * Boolean: `typeof variable === 'boolean'`
@@ -475,6 +495,7 @@ function() {
         ```
 
 ### 强值类型转换
+
 以下是一些常见的类型装换的例子，推荐使用。
 
 ```javascript
@@ -594,14 +615,14 @@ neg >>> 0;
 
 ## 条件判断
 
-* 应当「SHOULD」使用`===`和`!==`代替`==`和`!=`。
+* 应当「SHOULD」使用 `===` 和 `!==` 代替 `==` 和 `!=`。
 * 条件判断遵循以下规则
-    * **Objects**等同于**true**
-    * **Undefined**等同于**false**
-    * **Null**等同于**false**
-    * **Booleans**等同于**此布尔变量的值**
-    * **Numbers**如果是**+0, -0, 或者 NaN**等同于**false**，其他情况等同于**true**。
-    * **Strings**，当字符是空字符串`''`时，等同于**flase**，其他情况等同于**true**。
+    * **Objects** 等同于 **true**
+    * **Undefined** 等同于 **false**
+    * **Null** 等同于 **false**
+    * **Booleans** 等同于**此布尔变量的值**
+    * **Numbers** 如果是 **+0, -0, 或者 NaN** 等同于 **false**，其他情况等同于 **true**。
+    * **Strings**，当字符是空字符串 `''` 时，等同于 **flase**，其他情况等同于 **true**。
 
     ```javascript
     if ([0]) {
@@ -609,6 +630,7 @@ neg >>> 0;
       // 数组属于Objects,等同于true
     }
     ```
+
 * 应当「SHOULD」使用最简捷的方式判断。
 
     ```javascript
@@ -633,7 +655,7 @@ neg >>> 0;
     }
     ```
 
- 更多信息请查看[Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108)。
+更多信息请查看 [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108)。
 
 **[⬆ Top](#目录)**
 
@@ -641,49 +663,51 @@ neg >>> 0;
 
 **说明**
 
-* camel命名法，形如thisIsAnApple
-* pascal命名法，形如ThisIsAnApple
-* 下划线命名法，形如this_is_an_apple
+* camel 命名法，形如 thisIsAnApple
+* pascal 命名法，形如 ThisIsAnApple
+* 下划线命名法，形如 `this_is_an_apple`
 
 根据不同类型的内容， 必须「MUST」严格采用如下的命名法：
 
 * **变量名：**
-    必须「MUST」使用camel命名法
+    必须「MUST」使用 camel 命名法
 * **参数名：**
-    必须「MUST」使用camel命名法
+    必须「MUST」使用 camel 命名法
 * **函数名：**
-    必须「MUST」使用camel命名法
+    必须「MUST」使用 camel 命名法
 * **方法、属性**
-    必须「MUST」使用camel命名法
+    必须「MUST」使用 camel 命名法
 * **私有成员、方法**
-    必须「MUST」以下划线_开头
+    必须「MUST」以下划线 `_` 开头
 * **常量名：**
-    必须「MUST」使用全部大写的下划线命名法，如IS_DEBUG_ENABLED
+    必须「MUST」使用全部大写的下划线命名法，如 IS_DEBUG_ENABLED
 * **类名：**
-    必须「MUST」使用pascal命名法
+    必须「MUST」使用 pascal 命名法
+* **专有名词**
+    必须「MUST」使用规范写法，如 `HTML`，而不是 `Html`
 
 ### 语义
 
 命名同时还需要关注语义，如：
 
 * 变量名 应当「SHOULD」使用名词
-* **Boolean**类型的 应当「SHOULD」使用**is**、**has**等起头，表示其类型
+* **Boolean** 类型的 应当「SHOULD」使用 **is**、**has** 等起头，表示其类型
 * 函数名 应当「SHOULD」用动宾短语
 * 类名 应当「SHOULD」用名词
 
 **[⬆ Top](#目录)**
 
 ## 注释
-* Js文档注释，每个js文件顶部都应当「SHOULD」包含关于Js文件功能的注释信息。
 
+* JS 文档注释，每个 JS 文件顶部都应当「SHOULD」包含关于 JS 文件功能的注释信息。
 
     ```javascript
     /**
      * @fileoverview 文件功能描述或一些其他相关信息.
      */
     ```
-* 单行注释：以两个斜线开始，以行尾结束，两个斜线与内容之间必须「MUST」使用一个空格。
 
+* 单行注释：以两个斜线开始，以行尾结束，两个斜线与内容之间必须「MUST」使用一个空格。
 
     ```javascript
     // 这是一个注释
@@ -711,6 +735,7 @@ neg >>> 0;
         }
     }
     ```
+
 * 多行注释：当内容比较多用单行注释不能满足需求时，应当「SHOULD」使用多行注释，格式如下，前面应当「MUST」有个空格。
 
     ```javascript
@@ -722,6 +747,7 @@ neg >>> 0;
         statement
     }
     ```
+
 * 避免多余的注释，当代码很明了时不应当「SHOULD NOT」添加注释。
 
     ```
@@ -731,12 +757,13 @@ neg >>> 0;
     var count = 10;
     ```
 
-Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)。
+Doc 注释待完善，参考 [Doc生成工具](https://github.com/2betop/gmudoc)。
 
 **[⬆ Top](#目录)**
+
 ## 其他
 
-* 创建Object/Array时，应当「SHOULD」采用字面量方式。
+* 创建 Object/Array 时，应当「SHOULD」采用字面量方式。
 
     ```javascript
     // bad
@@ -751,7 +778,8 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
     // good
     var items = [];
     ```
-*  for-in循环体中应当「SHOULD」用hasOwnProperty方法检查成员是否为自身成员。避免来自原型链上的污染。
+
+*  for-in 循环体中应当「SHOULD」用 hasOwnProperty 方法检查成员是否为自身成员。避免来自原型链上的污染。
 
     ```javascript
     // good
@@ -762,8 +790,9 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
         }
     }
     ```
-* 不得「MUST NOT」使用with, void, eval。
-* 函数定义。不得「MUST NOT」在if、for、while等代码块中定义函数，在函数中定义内嵌函数时应该把函数定义放在顶部。闭包除外。
+
+* 不得「MUST NOT」使用 with, void, eval。
+* 函数定义不得「MUST NOT」在 if、for、while 等代码块中定义函数，在函数中定义内嵌函数时应该把函数定义放在顶部，闭包除外。
 
     ```javascript
     // bad
@@ -792,7 +821,8 @@ Doc注释待完善，参考[Doc生成工具](https://github.com/2betop/gmudoc)�
         }
     }
     ```
-* 立即执行函数应当「SHOULD」统一采用以下方式。更多信息请查看[jsperf](http://jsperf.com/bang-function)。
+
+* 立即执行函数应当「SHOULD」统一采用以下方式。更多信息请查看 [jsperf](http://jsperf.com/bang-function)。
 
     ```javascript
     // good
