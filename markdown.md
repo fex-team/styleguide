@@ -52,6 +52,29 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ## 章节2
     ```
 
+* 代码段的必须「MUST」使用 Fenced code blocks。
+
+    ```
+    ```javascript
+    var 
+    ```
+    ```
+
+* 表格的写法「SHOULD」，参考 [GFM](https://help.github.com/articles/github-flavored-markdown)。
+
+    ```
+    First Header  | Second Header
+    ------------- | -------------
+    Content Cell  | Content Cell
+    Content Cell  | Content Cell
+
+    | Left-Aligned  | Center Aligned  | Right Aligned |
+    | :------------ |:---------------:| -----:|
+    | col 3 is      | some wordy text | $1600 |
+    | col 2 is      | centered        |   $12 |
+    | zebra stripes | are neat        |    $1 |
+    ```
+
 * 中英文混排的写法「SHOULD」。
     - 英文和数字使用半角字符
     - 中文文字之间不加空格
