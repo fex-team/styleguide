@@ -126,6 +126,13 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     </style>
     ```
 
+* URL 的写法应该「SHOULD」省掉协议，这样能更好地适应 http 和 https。
+
+    ```html
+    //good
+    <script src="//fex.baidu.com/example.js"></script>
+    ```
+
 * 应该「SHOULD」省略自闭合标签结尾的斜杠。
 
     ```html
@@ -142,12 +149,22 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     ```
 
-* HTML 文件编码以及 `meta` 标签编码应该「SHOULD」统一为 `UTF-8`。
+* HTML 文件编码以及 `meta` 标签编码应该「SHOULD」统一为 `UTF-8`，文件内容编码为 UTF-8（无 BOM）。
 
     ```html
     <head>
       <meta charset="UTF-8">
     </head>
+    ```
+
+* 不应该「SHOULD NOT」使用实体，对于 UTF-8 的页面，使用实体意义不大，反而降低了可维护性。
+
+    ```
+    // bad
+    Euro is &ldquo;&eur;&rdquo;.
+    
+    // good
+    Euro is “€”.
     ```
 
 * HTML 文件编码声明必须「MUST」在 `<title>` 之前，避免编码检测出错导致的问题。
