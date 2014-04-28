@@ -4,13 +4,15 @@ HTML 编码规范
 此为前端开发团队遵循和约定的**HTML 编码规范**，意在提高代码的规范性和可维护性。
 
 ## 说明
-文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
-NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中被说明。
 
-**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加`HTML`标签)讨论。**
+文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
+NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中有说明。
+
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加 `HTML` 标签)讨论。**
 
 ## 规则
-* 必须「MUST」采用4个空格为一次缩进。
+
+* 必须「MUST」采用 4 个空格为一次缩进。
 * 新起一行的标签必须「MUST」要和父标签保持一次缩进。
 
     ```html
@@ -50,13 +52,15 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     <a class="maia-button maia-button-secondary">Sign in</a>
     ```
-* 文档类型声明必须「MUST」使用HTML5。
+
+* 文档类型声明必须「MUST」使用 HTML5。
 
     ```html
     // good
     <!DOCTYPE html>
     ```
-* HTML的标签使用应该「SHOULD」遵循标签的语义。
+
+* HTML 的标签使用应该「SHOULD」遵循标签的语义。
 
     ```html
     // bad
@@ -65,7 +69,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     <a href="recommendations/">All recommendations</a>
     ```
-* `img`标签应该「SHOULD」添加`alt`属性来增强可访问性。
+
+* `<img>` 标签应该「SHOULD」添加 `alt` 属性来增强可访问性。
 
     ```html
     // bad
@@ -74,7 +79,8 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
     ```
-* 应该「SHOULD」将HTML中的内容(html)、表现(css)和行为(javascript)分离，HTML标签只应该「SHOULD」用于定义内容。
+
+* 应该「SHOULD」将 HTML 中的内容(html)、表现(css)和行为(javascript)分离，HTML 标签只应该「SHOULD」用于定义内容。
 
     ```html
     // bad
@@ -99,6 +105,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
       my website that is presentational.
     <p>It’s awesome!
     ```
+
 * 应该「SHOULD」省略样式标签(link/style)和脚本标签(script)中的type属性。
 
     ```html
@@ -118,6 +125,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         .author{}
     </style>
     ```
+
 * 应该「SHOULD」省略自闭合标签结尾的斜杠。
 
     ```html
@@ -127,18 +135,33 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     // good
     <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
     ```
-* 应该「SHOULD」启用IE兼容模式。
+
+* 应该「SHOULD」启用 IE Edge 模式。
 
     ```html
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     ```
-* HTML文件编码以及`meta`标签编码应该「SHOULD」统一为`UTF-8`。
+
+* HTML 文件编码以及 `meta` 标签编码应该「SHOULD」统一为 `UTF-8`。
 
     ```html
     <head>
       <meta charset="UTF-8">
     </head>
     ```
+
+* HTML 文件编码声明必须「MUST」在 `<title>` 之前，避免编码检测出错导致的问题。
+
+    ```html
+    // bad
+    <title>中文</title>
+    <meta charset="UTF=8">
+
+    // good
+    <meta charset="UTF=8">
+    <title>中文</title>
+    ```
+
 * 布尔类型的属性不应该「SHOULD NOT」添加属性值。
 
     ```html

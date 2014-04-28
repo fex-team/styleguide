@@ -4,13 +4,14 @@ CSS 编码规范
 此为前端开发团队遵循和约定的 CSS 编码规范，意在提高代码的规范性和可维护性。
 
 ## 说明
+
 文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
 NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中被说明。
 
 * 所有带「MUST」说明的规则将提供检测工具检测。
 * 所有带「SHOULD」说明的规则将提供格式化工具自动排班。
 
-**还未定稿，对规范中提及的点有不赞同的欢迎[提出issues](https://github.com/fex-team/styleguide/issues/new)(请添加`CSS`标签)讨论。**
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出 issues](https://github.com/fex-team/styleguide/issues/new)(请添加 `CSS` 标签)讨论。**
 
 ## 目录
 
@@ -173,7 +174,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ```
 
 * CSS 中的属性名建议「RECOMMENDED」按照字母顺序排列，可以使用 Sublime Text 的 F5 命令来自动格式化。
-* 最后的选择符与"{"之间必须「MUST」有一个空格。
+* 最后的选择符与 `{` 之间必须「MUST」有一个空格。
 
     ```css
     /* bad */
@@ -265,6 +266,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 
 ## 样式重置
 
-* 应该「SHOULD」使用推荐的`normalize.css`进行样式重置。
+* 应该「SHOULD」使用推荐的 `normalize.css` 进行样式重置。
 
 **[⬆ Top](#目录)**
