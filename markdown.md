@@ -1,29 +1,28 @@
 Markdown 编写规范
 ==========================
 
-此为前端开发团队遵循和约定的**Markdown 编写规范**，意在提高文档的可读性。
+此为前端开发团队遵循和约定的 **Markdown 编写规范**，意在提高文档的可读性。
 
 ## 说明
 
 文档中使用的关键字「MUST」,「MUST NOT」,「REQUIRED」,「SHALL」,「SHALL
 NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL」在 [RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt) 中有说明。
 
-**还未定稿，对规范中提及的点有不赞同的欢迎[提出 issues](https://github.com/fex-team/styleguide/issues/new)(请添加`markdown`标签)讨论。**
+**还未定稿，对规范中提及的点有不赞同的欢迎[提出 issues](https://github.com/fex-team/styleguide/issues/new)（请添加 `markdown` 标签）讨论。**
 
 ## 规则
 
 * 后缀必须「MUST」使用 `.md`。
 * 文件名必须「MUST」使用小写，多个单词之间使用`-`风格。
-* 编码必须「MUST」用 UTF-8。
-* 章节必须「MUST」以 `##` 开始，而不是 `#`。
-* 文档标题的推荐写法「MUST」。
+* 文件编码必须「MUST」用 UTF-8。
+* 文档标题应该「SHOULD」这样写。
 
     ```
     Markdown 编写规范
     ==========================
     ```
-
-* 章节标题的写法「MUST」。
+* 章节标题必须「MUST」以 `##` 开始，而不是 `#`。
+* 章节标题必须「MUST」在 `#` 后加一个空格，且后面没有 `#`。
 
     ```
     // bad
@@ -36,7 +35,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ## 章节1
     ```
 
-* 标题和内容间必须「MUST」有空行。
+* 章节标题和内容间必须「MUST」有一个空行。
 
     ```
     // bad
@@ -52,9 +51,13 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     ## 章节2
     ```
 
-* 代码段的必须「MUST」使用 Fenced code blocks 风格，具体写法请参考本文档源码。
+* 代码段的必须「MUST」使用 Fenced code blocks 风格，如下所示：
 
-* 表格的写法「SHOULD」，参考 [GFM](https://help.github.com/articles/github-flavored-markdown)。
+        ```
+        console.log("");
+        ```
+
+* 表格的写法应该「SHOULD」参考 [GFM](https://help.github.com/articles/github-flavored-markdown)，如下所示：
 
     ```
     First Header  | Second Header
@@ -69,7 +72,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     | zebra stripes | are neat        |    $1 |
     ```
 
-* 中英文混排的写法「SHOULD」。
+* 中英文混排应该「SHOULD」采用如下规则：
     - 英文和数字使用半角字符
     - 中文文字之间不加空格
     - 中文文字与英文、阿拉伯数字及 @ # $ % ^ & * . ( ) 等符号之间加空格
@@ -79,11 +82,12 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     - 如果括号中的内容全部都是英文，则使用半角英文括号 
     - 当半角符号 / 表示「或者」之意时，与前后的字符之间均不加空格
 
-* 中文符号的写法「SHOULD」。
+* 中文符号应该「SHOULD」使用如下写法：
     - 用直角引号（「」）代替双引号（“”），不同输入法的具体设置方法请[参考这里](http://www.zhihu.com/question/19755746)
+    - 省略号使用「……」，而「。。。」仅用于表示停顿
     - 其它可以参考[知乎规范](http://www.zhihu.com/question/20414919)
 
-* 表达方式，应当「SHOULD」遵循《The Element of Style》。
+* 表达方式，应当「SHOULD」遵循《The Element of Style》：
     * 使段落成为文章的单元：一个段落只表达一个主题
     * 通常在每一段落开始要点题，在段落结尾要扣题
     * 使用主动语态
@@ -94,4 +98,5 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     * 将相关的词放在一起
     * 在总结中，要用同一种时态（这里指英文中的时态，中文不适用，所以可以不理会）
     * 将强调的词放在句末
+
 

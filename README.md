@@ -21,3 +21,8 @@
 * 实施阶段（待定）
     * 工具初步完善后逐步推广使用
 
+## 版权
+
+![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)
+
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
