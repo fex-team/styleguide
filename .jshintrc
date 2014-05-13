@@ -1,0 +1,219 @@
+{
+    /**
+     * 是否阻止位运算符的使用
+     *
+     * 有时候为了快速取整或判断，会使用一些位运算符，所以此项设置为 false
+     */
+    "bitwise": false,
+
+
+    /**
+     * 是否要求变量都使用驼峰命名
+     *
+     * 默认开启
+     */
+    "camelcase": true,
+
+
+    /**
+     * 是否要求 for/while/if 带花括号
+     *
+     * 我们建议多行的时候使用花括号，单行强制写在一行。
+     * 因为这个选项不管单行多行，所以默认关闭
+     */
+    "curly": false,
+
+
+    /**
+     * 是否强制使用严格等号
+     *
+     * 有时候工程师需要判断 null，所以默认不严格要求
+     */
+    "eqeqeq": false,
+
+
+    /**
+     * for-in 语句是否要求过滤原型链上的对象
+     *
+     * 默认打开
+     */
+    "forin": true,
+
+
+    /**
+     * 是要求否以 strict 模式检查
+     *
+     * 该选项要求文件有 "use strict;" 字符串，而且很多限制有点残酷。不全局要求，需要的模块自行开启
+     */
+    "strict": false,
+
+
+    /**
+     * 是否阻止修改或拓展基本对象（Array、Date 等）的原型链
+     *
+     * 原型链污染比较危险，默认打开
+     */
+    "freeze": true,
+
+
+    /**
+     * 是否要求自执行的方法使用括号括起
+     *
+     * 默认打开
+     */
+    "immed": true,
+
+
+    /**
+     * 指定缩进大小为 4 个空格
+     */
+    "indent": 4,
+
+
+    /**
+     * 要求变量在使用前声明
+     */
+    "latedef": true,
+
+
+    /**
+     * 要求构造函数大写
+     */
+    "newcap": true,
+
+
+    /**
+     * 不允许使用 arguments.callee 和 arguments.caller
+     */
+    "noarg": true,
+
+
+    /**
+     * 不允许空的代码快，默认关闭
+     */
+    "noempty": false,
+
+
+    /**
+     * 不允许使用 "non-breaking whitespace"。
+     * 
+     * 这些字符在非 UTF8 页面会导致代码失效
+     */
+    "nonbsp": true,
+
+
+    /**
+     * 阻止直接使用 new 调用构造函数的语句（不赋值对象）
+     *
+     * // OK
+     * var a = new Animal();
+     *
+     * // Warn
+     * new Animal();
+     */
+    "nonew": true,
+
+
+    /**
+     * 不允许使用 ++ 和 -- 运算符
+     *
+     * 默认关闭
+     */
+    "plusplus": false,
+
+
+    /**
+     * 字符串引号
+     *
+     * 默认要求使用单引号
+     */
+    "quotmark": "single",
+
+
+    /**
+     * 提示未定义的变量
+     *
+     * 未定义的变量会容易造成全局变量，该项开启
+     */
+    "undef": true,
+
+
+    /**
+     * 字符串不允许以空格加斜杠的形式来换行
+     *
+     * // OK
+     * var str = 'Hello ' +
+     *     'world';
+     *
+     * // No Way
+     * var str = 'Hello \
+     *     world';
+     */
+    "trailing": true,
+
+
+    /**
+     * 对代码中使用的 debugger 语句默认给出警告
+     */
+    "debug": false,
+
+
+    /**
+     * 变量只能在函数域上定义，在代码块上定义的变量给出警告
+     *
+     * // OK
+     * function test() {
+     *    var x;
+     *
+     *    if (true) {
+     *        x = 0;
+     *    }
+     *
+     *    x += 1;
+     * }
+     *
+     * // No Way
+     * function test() {
+     *
+     *    if (true) {
+     *        var x = 0;
+     *    }
+     *
+     *    x += 1;
+     * }
+     */
+    "funcscope": true,
+
+
+    /**
+     * 写字面量时，逗号放前面给出警告，例如：
+     *
+     * var obj = {
+     *     name: 'Anton'
+     *   , handle: 'valueOf'
+     *   , role: 'SW Engineer'
+     * }
+     */
+    "laxcomma": false,
+
+
+    /**
+     * 阻止在循环语句中产生函数
+     */
+    "loopfunc": false,
+
+
+    /**
+     * 每个函数只允许使用一个 var 定义变量
+     *
+     * 默认关闭
+     */
+    "onevar": false,
+
+    /**
+     * 提示未使用的变量
+     *
+     * 默认开启
+     */
+    "unused": true
+}
