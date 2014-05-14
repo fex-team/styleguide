@@ -116,7 +116,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
         c: 3
     };
     ```
-* 在运算符左右必须「MUST」使用空格。
+* 在二元运算符左右必须「MUST」使用空格。
 
     ```javascript
     // bad
@@ -140,7 +140,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     a++;
     ```
 
-* 关键字 `function` 后面必须「MUST」使用空格，但是如果是匿名方法，关键字 `function` 后面不允许「MUST NOT」使用空格。
+* 关键字 `function` 参数的圆括号前面「MUST NOT」使用空格。
 
     ```javascript
     // bad
