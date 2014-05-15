@@ -72,7 +72,7 @@
     "disallowTrailingWhitespace": true,
 
     // 每行「MUST NOT」超过 120 个字符
-    "maximumLineLength": 40,
+    "maximumLineLength": 120,
 
     // 一下操作符「MUST NOT」放在一行的最前面，需要放在上一行的后面
     "requireOperatorBeforeLineBreak": [
