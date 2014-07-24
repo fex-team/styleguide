@@ -15,7 +15,9 @@
 
 ## CSRF
 
-背景知识：[CSRF简单介绍及利用方法](http://drops.wooyun.org/papers/155) [Cross-Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+背景知识：
+- [CSRF简单介绍及利用方法](http://drops.wooyun.org/papers/155)
+- [Cross-Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 
 ## Cookie使用
 
@@ -39,8 +41,18 @@
 
 页面中如果需要使用第三方的数据，建议 「RECOMMENDED」 由 RD 获取，尽量避免以 jsonp 方式获取，如必须使用 jsonp，请限制好第三方返回的 callback 函数名，对于不允许使用的函数名称，一律禁止。
 
-在使用第三方提供的图片、文档时，建议「RECOMMENDED」由 RD 抓取相关内容
-
-禁止「MUST NOT」
+原则上，禁止「MUST NOT」使用第三方提供的资源：图片、文档等，如有必须，建议「RECOMMENDED」由 RD 抓取相关内容转存至自有 Server。
 
 ## Flash 使用
+
+## JSON/JSONP协议
+
+JSON 数据，必须「MUST」设置 http header Content-Type : application/json
+
+以 JSONP 形式向第三方提供数据，必须「MUST」设置 http header Content-Type : application/javascript，并且callback function 名称只允许出现：数组、字母、下划线。
+
+JSON/JSONP 方式提供数据，建议「RECOMMENDED」遵循最小化原则，只暴露需要暴露的信息，并且用白名单限制 referer 防止恶意抓取。
+
+## XML Httprequest 2（xhr2）
+
+如果支持跨域访问的需求，禁止「MUST」设置　header 为 　
