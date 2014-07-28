@@ -61,6 +61,22 @@
 
 ## Flash 使用
 
+SWF与js交互的控制属性AllowScriptAccess，「RECOMMENDED」强烈建议为never，如果选择sameDomain或者always，自己应该清楚自己在做什么
+
+SWF的网络属性AllowNetworking，「RECOMMENDED」强烈建议为none，否则可能会引起CSRF，如果选择all或internel，自己应该清楚自己在做什么
+
+SWF与js参数传递，「SHOULD」需要进行字符过滤，防止XSS攻击
+
+可执行文件(.swf)授信，不应该「SHOULD NOT」使用Security.allowDomain("*")，加载者或被加载者会获得和当前SWF相同的权限
+
+非可执行文件（.txt,.xml,.json，.jpg等）授信，不应该「SHOULD NOT」在crossdomain.xml文件中使用<allow-access-from domain="*"/>
+
+在加载跨域SWF时，「SHOULD NOT」慎用合并安全域（crossdomain.xml授权或loadBytes()），被加载的SWF会拥有和父SWF同样的权限，能做任何事情
+
+在使用sharedEvents时，所发送的事件「SHOULD」应该限制为只包含简单数据的事件，否则会把数据和SWF中的所有对象暴露出去
+
+###
+
 ## 上传文件
 
 建议「RECOMMENDED」上传接口所在的域名和主域名隔离，并且采用最小化原则限制允许上传的文件大小。
