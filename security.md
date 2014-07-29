@@ -69,7 +69,7 @@ SWF与js参数传递，「SHOULD」需要进行字符过滤，防止XSS攻击
 
 可执行文件(.swf)授信，不应该「SHOULD NOT」使用Security.allowDomain("*")，加载者或被加载者会获得和当前SWF相同的权限
 
-非可执行文件（.txt,.xml,.json，.jpg等）授信，不应该「SHOULD NOT」在crossdomain.xml文件中使用<allow-access-from domain="*"/>
+非可执行文件（.txt,.xml,.json，.jpg等）授信，不应该「SHOULD NOT」在crossdomain.xml文件中使用allow-access-from domain="*"
 
 在加载跨域SWF时，「SHOULD NOT」慎用合并安全域（crossdomain.xml授权或loadBytes()），被加载的SWF会拥有和父SWF同样的权限，能做任何事情
 
