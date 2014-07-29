@@ -15,6 +15,11 @@
 
 请务必阅读：[终极XSS防护备忘录](http://www.fooying.com/chinese-translationthe-ultimate-xss-protection-cheatsheet-for-developers/) 根据其中的描述做好数据转义操作。
 
+使用fis进行smarty模板XSS转义：
+
+fis-plus默认开启xss转义功能，需要编译时加`-o`参数
+> fisp release -o
+
 ## 富文本数据
 
 富文本数据「MUST」必须由 RD 依赖最小化原则进行处理，杜绝不安全的内容。
