@@ -73,7 +73,7 @@ SWF与js参数传递，「SHOULD」需要进行字符过滤，防止XSS攻击
 
 在加载跨域SWF时，「SHOULD NOT」慎用合并安全域（crossdomain.xml授权或loadBytes()），被加载的SWF会拥有和父SWF同样的权限，能做任何事情
 
-在使用sharedEvents时，所发送的事件「SHOULD」应该限制为只包含简单数据的事件，否则会把数据和SWF中的所有对象暴露出去
+在使用sharedEvents时，所发送的事件「SHOULD」应该限制为只包含简单数据的事件，否则可能会把SWF中的数据和舞台上所有对象暴露出去
 
 ## 上传文件
 
