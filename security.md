@@ -105,4 +105,6 @@ JSON/JSONP 方式提供数据，建议「RECOMMENDED」遵循最小化原则，�
 [80sec](http://www.80sec.com/)  
 [Open Web Application Security Project](https://www.owasp.org/)  
 [知道创宇](http://blog.knownsec.com/)  
-[上传攻击框架](http://www.owasp.org.cn/OWASP_Training/Upload_Attack_Framework.pdf)  
+[上传攻击框架](http://www.owasp.org.cn/OWASP_Training/Upload_Attack_Framework.pdf)    
+[SS编码剖析](http://www.freebuf.com/articles/web/43285.html) [XSS原理-1](http://www.freebuf.com/articles/web/40520.html) [
+XSS的原理-2](http://www.freebuf.com/articles/web/42727.html)
