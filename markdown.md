@@ -13,7 +13,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
 ## 规则
 
 * 后缀必须「MUST」使用 `.md`。
-* 文件名必须「MUST」使用小写，多个单词之间使用`-`风格。
+* 文件名必须「MUST」使用小写，多个单词之间使用`-`分隔。
 * 文件编码必须「MUST」用 UTF-8。
 * 文档标题应该「SHOULD」这样写。
 
