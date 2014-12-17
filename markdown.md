@@ -81,6 +81,7 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     - 如果括号内有中文，则使用中文括号
     - 如果括号中的内容全部都是英文，则使用半角英文括号 
     - 当半角符号 / 表示「或者」之意时，与前后的字符之间均不加空格
+    - 其它具体例子推荐[阅读这里](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
 * 中文符号应该「SHOULD」使用如下写法：
     - 用直角引号（「」）代替双引号（“”），不同输入法的具体设置方法请[参考这里](http://www.zhihu.com/question/19755746)
