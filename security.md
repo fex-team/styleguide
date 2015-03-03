@@ -98,7 +98,7 @@ JSON/JSONP 方式提供数据，建议「RECOMMENDED」遵循最小化原则，�
 
 
 ## 参考资料
-
+[JSONP 安全攻防技术](http://blog.knownsec.com/2015/03/jsonp_security_technic)  
 [Web 前端攻防 2014](http://fex.baidu.com/blog/2014/03/web-sec-2014/)  
 [New Tricks in XMLHttpRequest2](http://www.html5rocks.com/en/tutorials/file/xhr2/)  
 [WooYun](http://www.wooyun.org/)  
@@ -106,5 +106,6 @@ JSON/JSONP 方式提供数据，建议「RECOMMENDED」遵循最小化原则，�
 [Open Web Application Security Project](https://www.owasp.org/)  
 [知道创宇](http://blog.knownsec.com/)  
 [上传攻击框架](http://www.owasp.org.cn/OWASP_Training/Upload_Attack_Framework.pdf)    
-[SS编码剖析](http://www.freebuf.com/articles/web/43285.html) [XSS原理-1](http://www.freebuf.com/articles/web/40520.html) [
-XSS的原理-2](http://www.freebuf.com/articles/web/42727.html)
+[SS编码剖析](http://www.freebuf.com/articles/web/43285.html)   
+[XSS原理-1](http://www.freebuf.com/articles/web/40520.html)  
+[XSS的原理-2](http://www.freebuf.com/articles/web/42727.html)  
