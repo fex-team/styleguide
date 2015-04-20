@@ -1,0 +1,8 @@
+node_modules
+bower_components
+.idea
+.DS_Store
+.project
+.sass-cache
+.tmp
+npm-debug.log
