@@ -100,4 +100,6 @@ NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」和「OPTIONAL�
     * 在总结中，要用同一种时态（这里指英文中的时态，中文不适用，所以可以不理会）
     * 将强调的词放在句末
 
+## 扩展阅读
 
+* Google 后来也出了 [Markdown 规范](https://github.com/google/styleguide/blob/gh-pages/docguide/style.md)，很多和这里是一样的，但也增加了一些约定，可以参考
