@@ -19,7 +19,7 @@
     ],
 
     // 对象键值的 ":" 后「MUST」使用空格
-    "requireSpaceAfterObjectKeys": true,
+    "requireSpaceBeforeObjectValues": true,
 
     // 对象键值的 ":" 前「MUST NOT」使用空格
     // `,` 和 `;` 前面不允许「MUST NOT」使用空格。
