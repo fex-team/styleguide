@@ -2795,7 +2795,7 @@ alert(elements[0].tagName);
 
 var div = elements[0];
 var p = document.createElement('p');
-docpment.body.insertBefore(p, div);
+document.body.insertBefore(p, div);
 
 // 显示为 P
 alert(elements[0].tagName);
