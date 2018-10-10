@@ -2496,7 +2496,7 @@ TextNode.prototype.clone = function () {
 
 解释：
 
-通过 new Function 生成的函数作用域是全局使用域，不会影响当当前的本地作用域。如果有动态代码执行的需求，建议使用 new Function。
+通过 new Function 生成的函数作用域是全局使用域，不会影响当前的本地作用域。如果有动态代码执行的需求，建议使用 new Function。
 
 
 示例：
